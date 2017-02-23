@@ -12,8 +12,16 @@
 import AppContainer from './containers/AppContainer';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
-ReactDOM.render(<AppContainer />, document.getElementById('todoapp'));
+/*ReactDOM.render(<AppContainer />, document.getElementById('todoapp'));*/
+
+ReactDOM.render(
+	(<Router history={browserHistory}>
+      <Route path="/C:/Users/jlam/Documents/Test/my-todomvc/index.html" component={AppContainer}>
+      </Route>
+    </Router>)
+, document.getElementById('todoapp'));
 
 import TodoActions from './data/TodoActions';
 
