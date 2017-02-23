@@ -80,7 +80,7 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: '/C:/Users/jlam/Documents/Test/my-todomvc/index.html', component: _AppContainer2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: window.location.pathname, component: _AppContainer2.default })
 	), document.getElementById('todoapp'));
 
 	_TodoActions2.default.addTodo('My first task');

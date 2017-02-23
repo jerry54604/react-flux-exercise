@@ -18,7 +18,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 ReactDOM.render(
 	(<Router history={browserHistory}>
-      <Route path="/C:/Users/jlam/Documents/Test/my-todomvc/index.html" component={AppContainer}>
+      <Route path={window.location.pathname} component={AppContainer}>
       </Route>
     </Router>)
 , document.getElementById('todoapp'));
